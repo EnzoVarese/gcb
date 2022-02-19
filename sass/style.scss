@@ -1,0 +1,308 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* G Fonts */
+.gfonts{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Mixins */
+@mixin flex-around-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Vars */
+
+$backgroundHF: rgba(4, 119, 4, 0.815);
+
+/* Maps */
+
+$border: (
+    sombras: 0px 3px 10px yellow,
+    sombrasFooter: 5px 0px 10px yellow
+);
+
+body{
+    /* background-color: rgba(56, 228, 56, 0.815); */
+    background-image: url(../img/wc2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: auto;
+    /* Layout GRID */
+    #grid{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    /* Header */
+    & .header{
+        display: flex;
+        z-index: 9999;
+        position: sticky;
+        top: 0;
+        justify-content: space-around;
+        grid-area: header;
+        background-color: $backgroundHF;
+        box-shadow: map-get($border,sombras);
+        &__logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 6rem;
+            width: 6rem;
+        }
+        &__nav{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            & ul{
+                font-size: 1rem;
+                margin: 0;
+                & li{
+                    & a{
+                        font-size: 1.2rem;
+                    }
+                    & a:hover{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    /* Main index */
+    & .main{
+        grid-area: main;
+        min-height: 100vh;
+        & div{
+            & h1{
+                font-size: 3rem;
+                font-weight: bold;
+                color: green;
+                text-shadow: 1.1rem 0.7rem 0.4rem yellow;
+                margin-top: 10vh;
+                margin-left: 5vw;
+                letter-spacing: 0.5rem;
+            }
+            & p{
+                color: white;
+                font-weight: bold;
+                text-align: start;
+                padding: 1rem;
+            }
+            & h3{
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: green;
+                text-shadow: 1.1rem 0.7rem 0.4rem yellow;
+                margin-top: 10vh;
+                margin-left: 5vw;
+            }
+        }
+        &__multimedia{
+            display: flex;
+            justify-content: center;
+            padding: 1.5rem;
+            & iframe{
+                border: 5px solid green;
+                border-radius: 1rem;
+                box-shadow: 10px 10px 10px yellow;
+            }
+        }
+    }
+    /* Main Nosotros */
+    & .main{
+        & section{
+            & h1{
+                color: green;
+                font-weight: bold;
+                text-shadow: 1.1rem 0.7rem 0.4rem yellow;
+                padding: 1rem;
+                margin: 1rem;
+                border-bottom: 5px solid green;
+                text-align: center;
+                letter-spacing: 0.5rem;
+            }
+            & p{
+                font-size: 1.2rem;
+                color: green;
+                font-weight: bold;
+                text-align: center;
+            }
+            & div{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                & h2{
+                    color: white;
+                    font-weight: bold;
+                }
+                & iframe{
+                    width: 75%;
+                    height: 20rem;
+                    margin-bottom: 1rem;
+                    margin-top: 1rem;
+                    border: 5px solid green;
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
+    /* Main Contactos */
+    .main{
+        &__contactos{
+            /* background-image: linear-gradient(to bottom, rgba(56, 228, 56, 0.815),yellow); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            width: auto;
+            height: 100vh;
+            & h1{
+                color: black;
+                font-weight: bold;
+                text-shadow: 1.1rem 0.7rem 0.4rem yellow;
+                padding: 1rem;
+                border-bottom: 5px solid black;
+                text-align: center;
+                letter-spacing: 0.5rem;  
+            }
+            & p{
+                color: black;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 1rem;
+            }
+            & form{
+                & div{
+                    & label{
+                        color: black;
+                        font-weight: bold;
+                    }
+                    & input{
+                        width: 75%;
+                        cursor: pointer;
+                    }
+                    & select{
+                        cursor: pointer;
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+/* Main clases */
+    .main{
+        &__clases{
+            text-align: center;
+            & h1{
+                color: black;
+                font-weight: bold;
+                padding: 1rem;
+                letter-spacing: 0.2rem;  
+            }
+            & h3{
+                color: white;
+                font-weight: lighter;
+                margin-top: 0.5rem;
+            }
+            & p{
+                color: white;
+                font-weight: bold;
+                margin-top: 1rem;
+                margin-left: 2rem;
+            }
+            & iframe{
+                width: 50%;
+                height: 25%;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+                margin-left: 2rem;
+                border-radius: 1rem;
+                position: relative;
+            }
+        }
+    }
+    /* Main música */
+    .main{
+        &__musica{
+            min-height: 100vh;
+            text-align: center;
+            & h4{
+                color: white;
+                font-weight: bold;
+                margin-top: 1rem;
+            }
+            & iframe{
+                /* width: 50%;
+                height: 25%; */
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+                margin-left: 2rem;
+                border-radius: 1rem;
+                position: relative;
+            }
+            &--video{
+                display: flex;
+                justify-content: center;
+                padding: 1.5rem;
+                & iframe{
+                    border: 5px solid green;
+                    border-radius: 1rem;
+                    box-shadow: 5px 5px 5px yellowgreen;
+                }
+            }
+        }
+    }
+    /* Footer */
+    & footer{
+        grid-area: footer;
+        background: $backgroundHF;
+        min-height: auto;
+        & p{
+            color: white;
+            text-align: center; 
+        }
+        & #iconos{
+            & i{
+                font-size: 30px;
+                padding: 0 8px;
+                color: white;
+            }
+        }
+    }
+    @media screen and (min-width:1024px){
+        /* Layout GRID */
+        #grid{
+            grid-template-rows: 70px auto auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "header header header"
+            "main main main"
+            "footer footer footer";
+        }
+        & .main{
+            & section{
+                & div{
+                    & iframe{
+                        height: 30rem;
+                    }
+                }
+            }
+        }
+    }
+}
+

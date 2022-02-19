@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- SEO -->
+    <meta name="keywords" content="capoeira, brasil, bs as, clases, grupo, baile, música, colegiales, saavedra, roda">
+    <meta name="description" content="Grupo Capoeira Bs As situado en Bs As da clases y organiza rodas mensuales...">
+    <title>Grupo Capoeira Bs As</title>
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Link iconos BS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../sass/style.css">
+    <!-- Link fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body id="grid" class="gfonts">
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light header__nav">
+            <div class="container-fluid">
+                <a href="../index.html"><img class="header__logo me-3" src="../img/logogcb2.jpg" alt="Logo de GCB"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active me-3" aria-current="page" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active me-3" href="./sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link active me-3" href="./musica.html">Música</a></li>
+                        <li class="nav-item"><a class="nav-link active me-3" href="./clases.html">Clases</a></li>
+                        <li class="nav-item"><a class="nav-link active me-3" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main class="main__contactos">
+        <h1>Contactanos</h1>
+        <p>Para consultas por información de las clases utilice este formulario, nos estaremos contactando con usted a la brevedad.</p>
+        <!-- Formulario -->
+
+        <!-- div form -->
+        <div id="divForm">
+
+        <form class="row g-3 w-100" id="form">
+            <div class="col-md-6">
+                <label for="inputnombre4" class="form-label ms-3">Nombre</label>
+                <input type="nombre" class="form-control ms-3" id="inputnombre">
+            </div>
+            <div class="col-md-6">
+                <label for="inputApellido4" class="form-label ms-3">Apellido</label>
+                <input type="Apellido" class="form-control ms-3" id="inputApellido4">
+            </div>
+            <div class="col-12">
+                <label for="inputConsulta" class="form-label ms-3">Consulta</label>
+                <input type="text" class="form-control ms-3" id="inputConsulta" placeholder="Ingrese aquí su consulta">
+            </div>
+            <div class="col-md-6">
+                <label for="inputTelefono" class="form-label ms-3">Teléfono</label>
+                <input type="text" class="form-control ms-3" id="inputTelefono">
+            </div>
+            <div class="col-md-4">
+                <label for="inputGenero" class="form-label ms-3">Genero</label>
+                <select id="inputGenero" class="form-select ms-3">
+                    <option selected>Elegir...</option>
+                    <option>No especificar</option>
+                    <option>Mujer</option>
+                    <option>Hombre</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-secondary ms-3 mb-3">Enviar</button>
+            </div>
+        </form>
+
+    </div><!-- fin div form -->
+
+    </main>
+    <!-- Footer -->
+    <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3 pt-3"> Grupo Capoeira Bs As</p>
+        <div id="iconos">
+          <a href="https://www.youtube.com/user/capoeirabrasilbsas"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.instagram.com/capoeirabrasilbsas/?hl=es"><i class="bi bi-instagram"></i></a>
+          <a href="https://goo.gl/maps/ThePRzYL3RzYcz6N9"><i class="bi bi-geo-alt-fill"></i></a>
+        </div>
+    </footer>
+    <!-- JS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
