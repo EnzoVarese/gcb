@@ -30,7 +30,6 @@ $border: (
 );
 
 body{
-    /* background-color: rgba(56, 228, 56, 0.815); */
     background-image: url(../img/wc2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,7 +89,7 @@ body{
             & h1{
                 font-size: 3rem;
                 font-weight: bold;
-                color: green;
+                color: white;
                 text-shadow: 1.1rem 0.7rem 0.4rem yellow;
                 margin-top: 10vh;
                 margin-left: 5vw;
@@ -105,7 +104,7 @@ body{
             & h3{
                 font-size: 1.5rem;
                 font-weight: bold;
-                color: green;
+                color: white;
                 text-shadow: 1.1rem 0.7rem 0.4rem yellow;
                 margin-top: 10vh;
                 margin-left: 5vw;
@@ -126,18 +125,19 @@ body{
     & .main{
         & section{
             & h1{
-                color: green;
+                color: white;
                 font-weight: bold;
                 text-shadow: 1.1rem 0.7rem 0.4rem yellow;
                 padding: 1rem;
                 margin: 1rem;
                 border-bottom: 5px solid green;
                 text-align: center;
-                letter-spacing: 0.5rem;
+                letter-spacing: 0.3rem;
+                font-size: 3rem;
             }
             & p{
                 font-size: 1.2rem;
-                color: green;
+                color: white;
                 font-weight: bold;
                 text-align: center;
             }
@@ -149,10 +149,11 @@ body{
                 & h2{
                     color: white;
                     font-weight: bold;
+                    text-align: center;
                 }
                 & iframe{
-                    width: 75%;
-                    height: 20rem;
+                    width: 50%;
+                    height: 75%;
                     margin-bottom: 1rem;
                     margin-top: 1rem;
                     border: 5px solid green;
@@ -164,7 +165,6 @@ body{
     /* Main Contactos */
     .main{
         &__contactos{
-            /* background-image: linear-gradient(to bottom, rgba(56, 228, 56, 0.815),yellow); */
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
@@ -172,16 +172,18 @@ body{
             width: auto;
             height: 100vh;
             & h1{
-                color: black;
+                color: white;
                 font-weight: bold;
                 text-shadow: 1.1rem 0.7rem 0.4rem yellow;
                 padding: 1rem;
-                border-bottom: 5px solid black;
+                border-bottom: 5px solid green;
                 text-align: center;
-                letter-spacing: 0.5rem;  
+                letter-spacing: 0.3rem; 
+                font-size: 3rem;
             }
             & p{
-                color: black;
+                color: white;
+                text-shadow: 1.1rem 0.7rem 0.4rem black;
                 font-weight: bold;
                 text-align: center;
                 margin-top: 1rem;
@@ -209,10 +211,13 @@ body{
         &__clases{
             text-align: center;
             & h1{
-                color: black;
+                color: white;
                 font-weight: bold;
+                text-shadow: 1.1rem 0.7rem 0.4rem yellow;
+                border-bottom: 5px solid green;
                 padding: 1rem;
-                letter-spacing: 0.2rem;  
+                letter-spacing: 0.3rem;
+                font-size: 3rem;
             }
             & h3{
                 color: white;
@@ -241,19 +246,27 @@ body{
         &__musica{
             min-height: 100vh;
             text-align: center;
+            & h1{
+                color: white;
+                font-weight: bold;
+                text-shadow: 1.1rem 0.7rem 0.4rem yellow;
+                border-bottom: 5px solid green;
+                padding: 1rem;
+                letter-spacing: 0.3rem;  
+                font-size: 3rem;
+            }
             & h4{
                 color: white;
                 font-weight: bold;
                 margin-top: 1rem;
             }
             & iframe{
-                /* width: 50%;
-                height: 25%; */
+                width: 50%;
+                height: 50%;
                 margin-bottom: 1rem;
                 margin-top: 1rem;
-                margin-left: 2rem;
+                border: 5px solid green;
                 border-radius: 1rem;
-                position: relative;
             }
             &--video{
                 display: flex;
